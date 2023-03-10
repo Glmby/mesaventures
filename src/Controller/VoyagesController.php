@@ -67,6 +67,7 @@ class VoyagesController extends AbstractController{
         ]);
     }
     return $this->redirectToRoute("voyages");
+    }
     
     /**
      * @Route("/voyages/voyage/{id}", name="voyages.showone")
@@ -79,4 +80,5 @@ class VoyagesController extends AbstractController{
             'visite' => $visite
         ]);
     }
+    
 }
